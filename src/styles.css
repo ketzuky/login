@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+
+.middle-grapper{
+    width: 100%;
+    height: 100vh;
+    display: table;
+}
+
+.middel{
+    display: table-cell;
+    vertical-align: middle;
+}
+body{
+    background-color: #f1efef;
+}

@@ -1,0 +1,62 @@
+<div class="middle-grapper">
+  <div class="middel text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5">
+          <form [formGroup]="formLogin" (submit)="login(formLogin)">
+            <div class="row">
+              <div class="col-12 text-left mb-3">
+                <img src="../../assets/logo.png" alt="" width="130">
+              </div>
+              <div class="col-12">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">
+                      <i class="fas fa-user"></i>
+                    </span>
+                  </div>
+                  <input type="email" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1" formControlName="email">
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">
+                        <i class="fas fa-key"></i>
+                    </span>
+                  </div>
+                  <input type="password" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1" formControlName="password">
+                </div>
+              </div>
+              <div class="col-12 text-right">
+                <div class="form-group">
+                <small>¿Olvidó su contraseña?</small>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group">
+                  <button class="btn btn-block btn-primary" type="submit">Iniciar Sesión</button>
+                </div>
+              </div>
+            </div>
+              <hr class="mt-0">
+            <div class="row">
+              <div class="col-12">
+                <div class="form-group">
+                  <button class="btn btn-block btn-primary btn-linkedin"><b>Logueate con Linkedin</b></button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-lg-7 bg-paisaje">
+          <div class="bottom">
+            <h3>PLANEA TU VIAJE</h3>
+            <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<p-toast [baseZIndex]="1000"></p-toast>
